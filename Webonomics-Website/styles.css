@@ -1,0 +1,769 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #19181A;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar ul {
+    display: flex;
+    padding-top: 1em;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar {
+    background-color: #19181A;
+    padding-bottom: 1em;
+    align-items: center;
+}
+.nav-bar a {
+    color: white;
+    margin-top: 1em;
+    display: block;
+    padding: 0 1em;
+}
+.nav-bar a:hover {
+    color: rgb(156, 156, 156);
+}
+.company-name-nav-bar {
+    padding-top: 1em;
+    font-weight: bold;
+    margin-left: .8em;
+    display: flex;
+    margin-top: 20px;
+    
+}
+.nav-bar-name-text {
+    color: white;
+    padding-top: 1em;
+}
+.nav-bar-name-text:hover {
+    color: rgb(156, 156, 156);
+}
+.hero {
+    height: 100%;
+    display: flex;
+    text-align: center;
+    margin-top: 3em;
+    
+}
+
+.logo {
+    height: 30px;
+    width: 30px;
+}
+.main-hero-text {
+    color: white;
+    margin: auto;
+    margin-top: 10vh;
+    font-weight: 600;
+    font-family: 'Inconsolata', monospace;
+    font-size: 3em;
+    max-width: 500px;
+}
+.main-hero-text-desc {
+    color: white;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 2em;
+    font-size: 1.12em;
+    opacity: .7;
+}
+.right-col-hero-section {
+    
+}
+.coin-market-cap-button {
+    padding: 1.5em;
+    padding-left: 5em;
+    padding-right: 5em;
+    border-radius: 8px;
+    
+    border: none;
+    background-color: #2fa750;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 7px 6px 10px black;
+}
+.coin-market-cap-button:hover {
+    background-color: #00ff48;
+}
+.button-container {
+    margin-top: 3em;
+}
+.line {
+    position: absolute;
+    margin-top: 8em;
+    width: 80vw;
+    height: 1px;
+    transform: translate(6vw,120px);
+    background-color: rgb(255, 255, 255,.3);
+    margin: auto;
+}
+.left-nav {
+    width: 50px;
+    height: 225px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: fixed;
+    border-radius: 2em;
+    display: none;
+    top: 38vh;
+    margin-left: 10px;
+}
+.side-nav {
+
+}
+.discord-icon {
+    margin-left: -11px;
+    margin-top: 20px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    padding: 0 1em;
+}
+.twitter-icon {
+    margin-left: -11px;
+    margin-top: 20px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    padding: 0 1em;
+}
+.reddit-icon {
+    margin-left: -11px;
+    margin-top: 20px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    padding: 0 1em;
+}
+.logo-line-hero {
+    display: block;
+    text-align: center;
+    display: none;
+}
+.coin-market-cap-logo {
+    transform: translateY(30px);
+    height: 300px;
+    width: 400px;
+}
+.coin-gecko-logo {
+    height: 250px;
+    width: 350px;
+    transform: translateY(-140px);
+}
+
+.hamburger-icon {
+    height: 40px;
+    width: 40px;
+    fill: white;
+    display: none;
+}
+.hamburger-button {
+    background-color: transparent;
+    border: none;
+    display: none;
+    cursor: pointer;
+    padding-top: .5em;
+    padding-right: .6em;
+
+}
+.light-dark-mode {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.moon-icon {
+    width: 30px;
+    height: 30px;
+    display: none;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.sun-icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.about-us {
+    width: 100%;
+    background-color: #272727;
+    background-image: linear-gradient(#19181A , #272727 18%);
+    text-align: center;
+    justify-content: center;
+    padding-top: 5em;
+}
+.about-us-text {
+    padding: 2em;
+    color: white;
+    transform: translateY(100px);
+    font-family: 'Open Sans';
+    font-weight: 300;
+    opacity: .1;
+    max-width: 1000px;
+    justify-content: center;
+    margin: auto;
+    font-size: 1em;
+}
+.about-us-title {
+    color: white;
+    padding-bottom: 50px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 2em;
+    font-size: 3em;
+    font-weight: 600;
+    font-family: 'Inconsolata', monospace;
+}
+
+.moveUp {
+    animation-name: moveUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.moveUp2 {
+    animation-name: moveUp2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes moveUp {
+    from {
+        transform: translateY(100px);
+        opacity: .1;
+    }
+    to{
+        transform: translateY(-50px);
+        opacity: 1;
+    }
+}
+@keyframes moveUp2 {
+    from {
+        transform: translateY(100px);
+        opacity: .1;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.white-paper-container {
+    padding-bottom: 7em;
+    justify-content: center;
+    text-align: center;
+}
+.white-paper-title {
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    font-size: 2em;
+    padding-top: 2em;
+    padding-bottom: 1.2em;
+}
+.white-paper-button {
+    padding: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+    border-radius: 8px;
+    border: none;
+    background-color: #b679f2;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 8px 5px 10px black;
+}
+.white-paper-button:hover {
+    background-color: #a24cf8;
+}
+.white-paper-line {
+    transform: translateX(8vw);
+    margin: auto;
+}
+.white-paper-updated-text {
+    color: white;
+    transform: translateY(242px);
+    font-weight: 300;
+}
+
+
+.road-map {
+    color: white;
+    padding-bottom: 10em;
+    padding: 2em;
+    padding-top: 6em;
+    background-image: linear-gradient(#272727 , #0d0d0d 18%);
+}
+.road-map-container {
+    margin-left: 4em;
+    padding-bottom: 10em;
+}
+.road-map-container h2 {
+    text-align: center;
+}
+.road-map-card {
+    text-align: center;
+    margin: auto;
+    border-radius: 1em;
+    background-color: #333333;
+    margin-bottom: 3em;
+    padding-right: 2em;
+    max-width: 500px;
+    /*box-shadow: 8px 4px 8px #4093b7;*/
+    transform: translateY(100px);
+    opacity: .1;
+    border: 1.5px solid black;
+}
+.road-map-card-header {
+    color: black;
+    
+}
+.road-map-header {
+}
+.road-map-card-header-container {
+    background-color: white;
+    padding: 1em;
+    width: 100%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+.road-map-header-container {
+    text-align: center;
+    padding-bottom: 5em;
+    font-family: 'Inconsolata', monospace;
+}
+.road-map-header-line {
+    transform: translate(6vw,20px);
+    margin: 0;
+}
+.road-map-list {
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-bottom: 2em;
+}
+ul.road-map-list{
+    list-style-type: circle;
+}
+.road-map-list p {
+    padding-bottom: .5em;
+}
+.road-map-card-text {
+    text-align: left;
+}
+.circle {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    position: absolute;
+    transform: translate(-60px,20px);
+    border-radius: 100%;
+}
+.vert-line {
+    width: 2px;
+    background-color: white;
+    height: 0px;
+    margin-left: 14px;
+}
+.load-line {
+    animation: load-line;
+    animation-duration: 1.2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes load-line {
+    from {
+        height: 0px;
+    }
+    to{
+        height: 290px;
+    }
+}
+
+.top-footer {
+    padding-top: 3em;
+    padding-left: 1.5em;
+    padding-bottom: 3em;
+    margin: auto;
+    background-color: #19181A;
+}
+.join-text-footer {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-bottom: 3.5em;
+    font-family: 'Inconsolata', monospace;
+}
+.card {
+    width: 80vw;
+    height: 70px;
+    border-radius: .9em;;
+    background-color: white;
+    color: #19181A;
+    margin-bottom: 1em;
+    box-shadow: 8px 5px 7px #b679f2;
+}
+.card:hover {
+    background-color: rgb(182, 182, 182);
+}
+.card-text {
+    transform: translate(30px,30px);
+    
+}
+.social-link {
+    margin: 0;
+    padding: 0;
+}
+.bottom-footer {
+    color: white;
+    background-color: #19181A;;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em;
+
+}
+.bottom-list-header {
+    font-weight: bold;
+    color: white;
+}
+.bottom-list-link {
+    cursor: pointer;
+    padding-bottom: .5em;
+}
+.a-links-bottom{
+    text-decoration: none;
+    color: white;
+}
+.a-links-bottom:hover{
+    color: rgb(160, 160, 160);
+}
+.list-links-bottom {
+    padding-top: 1em;
+}
+.bottom-logo {
+    display: none;
+    padding-right: 100px;
+}
+.logo-pic-bottom {
+    height: 150px;
+    width: 200px;
+}
+.spinning-circle-gif {
+    position: absolute;
+    top: 2.3em;
+    transform: translate(420px,20px);
+    height: 600px;
+}
+.contract-container {
+    padding-top: 2em;
+    padding-bottom: 4em;
+    justify-content: center;
+    align-items: center;
+}
+.contract-text{
+    padding-right: 1em;
+    color: white;
+    padding-bottom: 2em;
+}
+.contract-button{
+    background-color: #b679f2;
+    padding: 1em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    border-radius: 2em;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 8px 5px 10px black;
+    font-size: 13px;
+}
+.contract-button:hover {
+    background-color: #a24cf8;
+}
+
+@media only screen and (max-width: 630px) {
+    .nav-bar ul {
+        display: none;
+        padding: 0;
+    }
+    .nav-bar li {
+        padding-top: 20px;
+        
+    }
+    .nav-bar {
+        padding-bottom: 1.85em;
+    }
+    .hamburger-icon {
+        display: block;
+        padding-top: 1em;
+        padding-left: 1em;
+        margin-right: 1em;
+    }
+    .hamburger-button {
+        display: block;
+
+    }
+    .nav-menu-hamburger {
+        background-color: none;
+        position: absolute;
+        right: 0;
+        height: 750px;
+        z-index: 100;
+    }
+  
+}
+@media only screen and (min-width: 650px){
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr .2fr;
+        grid-template-areas: "left-col-hero-section""right-col-hero-section";
+    }
+    .main-hero-text {
+        text-align: left;
+        margin-left: 65px;
+    }
+    .main-hero-text-desc {
+        text-align: left;
+        margin-left: 65px;
+
+    }
+    .left-col-hero-section {
+        margin-left: 10px;
+    }
+    .coin-market-cap-button {
+        margin-left: -90px;
+    }
+    .nav-menu-hamburger {
+        padding-right: 0em;
+    }
+    .contract-button {
+        font-size: 15px;
+    }
+    
+}
+@media only screen and (min-width: 750px){
+    .social-cards {
+        display: flex;
+        justify-content: center;
+        
+    }
+    .card {
+        max-width: 225px;
+        margin-right: 1em;
+    }
+    .top-footer {
+        text-align: center;
+    }
+    .card-text {
+        transform: translate(-30px,30px);
+    }
+    .bottom-logo {
+        display: block;
+    }
+    .bottom-footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .about-us-text{
+        font-size: 1.3em;
+    }
+    .about-us-title {
+        font-size: 2.85em;
+    }
+    .white-paper-title{
+        font-size: 2.3em;
+    }
+    .white-paper-updated-text {
+        transform: translateY(260px);
+    }
+    .logo-line-hero {
+        display: flex;
+        display: none;
+        justify-content: center;
+    }
+    .coin-gecko-logo {
+
+        transform: translateY(50px);
+    }
+}
+@media only screen and (min-width: 850px){
+    .hero {
+        grid-template-columns: 1fr .3fr;
+    }
+    .main-hero-text {
+
+    }
+    .coin-market-cap-button {
+        margin-left: -100px;
+    }
+    .left-col-hero-section {
+        margin-left: 15px;
+    }
+    .header {
+        max-width: 80vw;
+        text-align: center;
+        margin: auto;
+    }
+    .hero-container {
+        max-width: 80vw;
+        margin: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .company-name-nav-bar {
+        margin-left:0;
+    }
+    .our-mission {
+        max-width: 80vw;
+        margin: auto;
+    }
+    .top-footer {
+        max-width: 80vw;
+        margin: auto;
+    }
+    .bottom-footer {
+        max-width: 80vw;
+        margin: auto;
+
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .hero {
+        grid-template-columns: 1fr .45fr;
+    }
+    .main-hero-text {
+        max-width: 800px;
+        font-size: 3.2em;
+        margin-left: 100px;
+    }
+    .main-hero-text-desc {
+        font-size: 1em;
+        max-width: 600px;
+        margin-left: 100px;
+    }
+    .coin-market-cap-button {
+        margin-left: -150px;
+    }
+    .left-col-hero-section {
+        margin-left: 40px;
+    }
+    .left-nav {
+        display: block;
+    }
+    .card {
+        max-width: 300px;
+    }
+    .card-text {
+        transform: translate(-60px,30px);
+    }
+    .bottom-footer {
+        grid-template-columns: 1fr 1fr 1fr ;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+@media only screen and (min-width: 1200px){
+    .hero {
+        grid-template-columns: 1fr .45fr;
+    }
+    .main-hero-text {
+
+
+    }
+    .main-hero-text-desc {
+        font-size: 1.25em;
+    }
+    .coin-market-cap-button {
+        margin-left: -160px;
+    }
+    .left-col-hero-section {
+        margin-left: 70px;
+    }
+    .about-us-text{
+        font-size: 1.5em;
+    }
+    .about-us-title {
+        font-size: 3em;
+    }
+    .white-paper-title {
+        font-size: 2.4em;
+    }
+    .white-paper-updated-text {
+        transform: translateY(280px);
+    }
+
+}
+@media only screen and (min-width: 1400px){
+    .hero {
+        grid-template-columns: 1fr .45fr;
+    }
+    .main-hero-text {
+        max-width: 650px;
+        font-size: 3.8em;
+        margin-left: 120px;
+    }
+    .coin-market-cap-button {
+        margin-left: -170px;
+    }
+    .left-col-hero-section {
+        margin-left: 70px;
+    }
+    .main-hero-text-desc {
+        font-size: 1.4em;
+        margin-left: 120px;
+    }
+}
+
+    @media only screen and (min-width: 1600px){
+        .hero {
+            grid-template-columns: 1fr .45fr;
+        }
+        .main-hero-text {
+            max-width: 1000px;
+            font-size: 4em;
+            margin-left: 130px;
+        }
+        .main-hero-text-desc {
+            margin-left: 130px;
+        }
+        .coin-market-cap-button {
+            margin-left: -200px;
+        }
+        .left-col-hero-section {
+            margin-left: 110px;
+        }
+        .right-col-hero-section {
+            margin-left: 110px;
+        }
+        .about-us-text{
+            font-size: 1.7em;
+        }
+        .about-us-title {
+            font-size: 3.5em;
+        }
+        .white-paper-title {
+            font-size: 2.8em;
+        }
+        .white-paper-updated-text {
+            transform: translateY(300px);
+        }
+    }
+@media only screen and (min-width: 1000px){
+    
+}
