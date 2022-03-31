@@ -84,6 +84,10 @@ a {
 .right-col-hero-section {
     
 }
+.button-container {
+    display: flex;
+    margin-left: 60px;
+}
 .coin-market-cap-button {
     padding: 1.5em;
     padding-left: 5em;
@@ -98,9 +102,35 @@ a {
     font-size: 15px;
     cursor: pointer;
     box-shadow: 7px 6px 10px black;
+   
+}
+.disc-button-container {
+    padding-top: 1.55em;
+    text-align: center;
+    margin-right: 1.5em;
+}
+.discord-button {
+    margin-top: 3em;
+    margin-left: 2em;
+    padding: 1.4em;
+    padding-left: 4em;
+    padding-right: 4em;
+    border-radius: 8px;
+    border: 2px solid #2fa750;
+    
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 7px 6px 10px black;
+    
 }
 .coin-market-cap-button:hover {
     background-color: #00ff48;
+}
+.discord-button:hover {
+    background-color: #2fa750;
 }
 .button-container {
     margin-top: 3em;
@@ -220,16 +250,76 @@ a {
     justify-content: center;
     margin: auto;
     font-size: 1em;
+    display:none;
 }
 .about-us-title {
     color: white;
-    padding-bottom: 50px;
+    padding-bottom: 2em;
     padding-left: 2em;
     padding-right: 2em;
     padding-top: 2em;
     font-size: 3em;
     font-weight: 600;
     font-family: 'Inconsolata', monospace;
+}
+
+.about-section {
+    margin: auto;
+    margin-bottom: 3em;
+
+}
+.community-vision-section {
+    color: white;
+    margin-bottom: 3em;
+    max-width: 70vw;
+    text-align: left;
+    transform: translateY(100px);
+}
+.community-vision-header {
+    padding-bottom: .7em;
+    font-weight: 600;
+    font-family: 'Inconsolata', monospace;
+    font-size: 3em;
+}
+.community-vision-desc {
+    font-size: 1.12em;
+    opacity: .7;
+}
+
+.airdrop-vision-section {
+    color: white;
+    margin-bottom: 3em;
+    max-width: 70vw;
+    text-align: left;
+    transform: translateY(100px);
+}
+.airdrop-vision-header {
+    padding-bottom: .7em;
+    font-weight: 600;
+    font-family: 'Inconsolata', monospace;
+    font-size: 3em;
+}
+.airdrop-vision-desc {
+    font-size: 1.12em;
+    opacity: .7;
+}
+
+.application-vision-section {
+    color: white;
+    margin-bottom: 3em;
+    max-width: 70vw;
+    text-align: left;
+    transform: translateY(100px);
+}
+.application-vision-header {
+    padding-bottom: .7em;
+    font-weight: 600;
+    font-family: 'Inconsolata', monospace;
+    font-size: 3em;
+}
+.application-vision-desc {
+    font-size: 1.12em;
+    opacity: .7;
 }
 
 .moveUp {
@@ -496,7 +586,7 @@ ul.road-map-list{
     background-color: #a24cf8;
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 715px) {
     .nav-bar ul {
         display: none;
         padding: 0;
@@ -525,7 +615,26 @@ ul.road-map-list{
         height: 750px;
         z-index: 100;
     }
+    
   
+}
+@media only screen and (max-width: 850px) {
+    .button-container {
+        display: block;
+    }
+    .button-container {
+        margin-left: 0px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .about-section {
+        text-align: center;
+        margin: auto;
+        margin-bottom: 3em;
+    }
+    .disc-button-container {
+        padding-top: 5em;
+    }
 }
 @media only screen and (min-width: 650px){
     .hero {
@@ -546,7 +655,7 @@ ul.road-map-list{
         margin-left: 10px;
     }
     .coin-market-cap-button {
-        margin-left: -90px;
+        
     }
     .nav-menu-hamburger {
         padding-right: 0em;
@@ -608,7 +717,7 @@ ul.road-map-list{
 
     }
     .coin-market-cap-button {
-        margin-left: -100px;
+        
     }
     .left-col-hero-section {
         margin-left: 15px;
@@ -656,8 +765,11 @@ ul.road-map-list{
         max-width: 600px;
         margin-left: 100px;
     }
+    .button-container {
+        margin-left: 100px;
+    }
     .coin-market-cap-button {
-        margin-left: -150px;
+       
     }
     .left-col-hero-section {
         margin-left: 40px;
@@ -690,7 +802,7 @@ ul.road-map-list{
         font-size: 1.25em;
     }
     .coin-market-cap-button {
-        margin-left: -160px;
+        
     }
     .left-col-hero-section {
         margin-left: 70px;
@@ -718,8 +830,11 @@ ul.road-map-list{
         font-size: 3.8em;
         margin-left: 120px;
     }
+    .button-container {
+        margin-left: 120px;
+    }
     .coin-market-cap-button {
-        margin-left: -170px;
+       
     }
     .left-col-hero-section {
         margin-left: 70px;
@@ -743,7 +858,7 @@ ul.road-map-list{
             margin-left: 130px;
         }
         .coin-market-cap-button {
-            margin-left: -200px;
+            
         }
         .left-col-hero-section {
             margin-left: 110px;
@@ -762,6 +877,9 @@ ul.road-map-list{
         }
         .white-paper-updated-text {
             transform: translateY(300px);
+        }
+        .button-container {
+            margin-left: 130px;
         }
     }
 @media only screen and (min-width: 1000px){

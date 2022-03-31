@@ -37,6 +37,10 @@ const vertLine = document.querySelectorAll(".vert-line");
 const circle = document.querySelectorAll(".circle")
 const aboutUs = document.querySelector(".about-us")
 const spinningGif = document.querySelector(".spinning-circle-gif");
+const discordButton = document.querySelector(".discord-button");
+const applicationSection = document.querySelector(".application-vision-section");
+const airdropSection = document.querySelector(".airdrop-vision-section");
+const communitySection = document.querySelector(".community-vision-section");
 const body = document.body;
 let hamburgerButtonClicked = false;
 let darkmode = true;
@@ -58,12 +62,12 @@ hamburgerButton.addEventListener("click", e => {
 
 window.addEventListener("resize", () => {
     console.log(window.innerWidth);
-    if(window.innerWidth > 630){
+    if(window.innerWidth > 715){
         navBarLinks.style.display = "flex";
         navMenuHamburger.style.backgroundColor = "transparent";
         navMenuHamburger.style.paddingRight = "0em";
     }
-    else if (window.innerWidth <= 630) {
+    else if (window.innerWidth <= 715) {
         navBarLinks.style.display = "none";
         navMenuHamburger.style.backgroundColor = "transparent";
         navMenuHamburger.style.paddingRight = "0em";
@@ -109,7 +113,49 @@ const observer = new IntersectionObserver(function(entries, observer) {
     })
 }, {})
 
+const observer4 = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            console.log(entry.target)
+            entry.target.classList.toggle('moveUp');
+            observer.unobserve(entry.target);
+        }
+        else {
+            return;
+        }
+    })
+}, {})
+
+const observer5 = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            console.log(entry.target)
+            entry.target.classList.toggle('moveUp');
+            observer.unobserve(entry.target);
+        }
+        else {
+            return;
+        }
+    })
+}, {})
+
+const observer6 = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            console.log(entry.target)
+            entry.target.classList.toggle('moveUp');
+            observer.unobserve(entry.target);
+        }
+        else {
+            return;
+        }
+    })
+}, {})
+
 observer.observe(aboutUsText);
+observer4.observe(applicationSection);
+observer5.observe(airdropSection);
+observer6.observe(communitySection);
 
 roadMapCard.forEach(element => {
     observer2.observe(element);
@@ -164,7 +210,8 @@ switchLightMode.addEventListener("click", () => {
         });
         roadMapLine.style.backgroundColor = "black";
         aboutUs.style.backgroundImage = "linear-gradient(white , #272727 28%)";
-        spinningGif.src = "Images/output-onlinegiftools (4).gif"
+        spinningGif.src = "Images/output-onlinegiftools (4).gif";
+        discordButton.style.color = "black";
     }
     else {
         darkmode = true;
@@ -210,6 +257,7 @@ switchLightMode.addEventListener("click", () => {
         roadMapLine.style.backgroundColor = "white";
         aboutUs.style.backgroundImage = "linear-gradient(#19181A , #272727 18%)";
         roadMap.style.backgroundImage = "linear-gradient(#272727 , #0d0d0d 18%)";
-        spinningGif.src = "Images/output-onlinegiftools (5).gif"
+        spinningGif.src = "Images/output-onlinegiftools (5).gif";
+        discordButton.style.color = "white";
     }
 });
