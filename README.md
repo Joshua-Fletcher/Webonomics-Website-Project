@@ -14,3 +14,14 @@ A website I made for a startup company named Webonomics using HTML, CSS, and Jav
 ## Phase 1
 
 ![Webonomics-Website-GIF](https://user-images.githubusercontent.com/97414099/158288985-09c7973c-d058-456b-9be7-42023c40252f.gif)
+
+<br>
+
+# How to Run
+<br>
+
+1. Run "git clone https://github.com/Joshua-Fletcher/Webonomics-Website-Project.git" in your bash terminal
+
+2. Open the repository folder in a code editor such as vscode
+
+3. Launch the site using an extention such as Live Server
