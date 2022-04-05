@@ -21,12 +21,14 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 .nav-bar {
     background-color: #19181A;
     padding-bottom: 0em;
     align-items: center;
     height: 80px;
+    z-index: 1;
 }
 .nav-bar a {
     color: white;
@@ -56,6 +58,7 @@ a {
     text-align: center;
     margin-top: -5em;
     padding-top: 3em;
+    z-index: -1;
 }
 
 .logo {
@@ -581,6 +584,7 @@ ul.road-map-list{
 
 .airdrop-req {
     color: white;
+    background-color: #19181A;
     padding-bottom: 5em;
 }
 .airdrop-req-header {
@@ -817,9 +821,9 @@ ul.road-map-list{
         font-size: 1em;
     }
 }
-@media only screen and (max-width: 1375px) and (min-width:  950px) {
+@media only screen and (max-width: 1375px) and (min-width:  725px) {
     .mission-card {
-        height: 450px;
+        height: 500px;
     }
 }
 @media only screen and (max-width: 875px) {
@@ -864,17 +868,15 @@ ul.road-map-list{
 @media only screen and (max-width: 725px){
     .card-container-mission {
         display: block;
-        margin-left:5vw;
+        
     }
 }
-@media only screen and (max-width: 950px){
-    .card-container-mission {
-        display: block;
-        margin-left:0vw;
+
+@media only screen and (min-width: 800px) {
+    .our-mission {
+        max-width: 85vw;
+        margin: auto;
     }
-}
-@media only screen and (min-width: 750px) and (max-width: 950px) {
-    
 }
 @media only screen and (min-width: 750px){
     .social-cards {
@@ -946,10 +948,7 @@ ul.road-map-list{
         margin: 0;
     }
     
-    .our-mission {
-        max-width: 80vw;
-        margin: auto;
-    }
+    
     .top-footer {
         max-width: 80vw;
         margin: auto;
@@ -992,9 +991,6 @@ ul.road-map-list{
     }
     .left-nav {
         display: block;
-    }
-    .card-container-mission {
-        margin-left:-25px;
     }
     .card {
         max-width: 300px;
