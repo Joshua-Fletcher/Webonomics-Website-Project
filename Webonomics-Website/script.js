@@ -41,6 +41,9 @@ const discordButton = document.querySelector(".discord-button");
 const applicationSection = document.querySelector(".application-vision-section");
 const airdropSection = document.querySelector(".airdrop-vision-section");
 const communitySection = document.querySelector(".community-vision-section");
+const communityCard = document.querySelector(".mission-card1");
+const airdropCard = document.querySelector(".mission-card2");
+const applicationCard = document.querySelector(".mission-card3");
 const body = document.body;
 let hamburgerButtonClicked = false;
 let darkmode = true;
@@ -62,12 +65,12 @@ hamburgerButton.addEventListener("click", e => {
 
 window.addEventListener("resize", () => {
     console.log(window.innerWidth);
-    if(window.innerWidth > 715){
+    if(window.innerWidth > 820){
         navBarLinks.style.display = "flex";
         navMenuHamburger.style.backgroundColor = "transparent";
         navMenuHamburger.style.paddingRight = "0em";
     }
-    else if (window.innerWidth <= 715) {
+    else if (window.innerWidth <= 820) {
         navBarLinks.style.display = "none";
         navMenuHamburger.style.backgroundColor = "transparent";
         navMenuHamburger.style.paddingRight = "0em";
@@ -117,7 +120,7 @@ const observer4 = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             console.log(entry.target)
-            entry.target.classList.toggle('moveUp');
+            entry.target.classList.toggle('moveUp4');
             observer.unobserve(entry.target);
         }
         else {
@@ -130,7 +133,7 @@ const observer5 = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             console.log(entry.target)
-            entry.target.classList.toggle('moveUp');
+            entry.target.classList.toggle('moveUp3');
             observer.unobserve(entry.target);
         }
         else {
@@ -153,9 +156,9 @@ const observer6 = new IntersectionObserver(function(entries, observer) {
 }, {})
 
 observer.observe(aboutUsText);
-observer4.observe(applicationSection);
-observer5.observe(airdropSection);
-observer6.observe(communitySection);
+observer4.observe(applicationCard);
+observer5.observe(airdropCard);
+observer6.observe(communityCard);
 
 roadMapCard.forEach(element => {
     observer2.observe(element);
