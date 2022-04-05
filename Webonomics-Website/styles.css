@@ -54,7 +54,7 @@ a {
     height: 100%;
     display: flex;
     text-align: center;
-    margin-top: -1em;
+    margin-top: -5em;
     padding-top: 3em;
 }
 
@@ -770,7 +770,9 @@ ul.road-map-list{
         height: 750px;
         z-index: 100;
     }
-    
+    .hero {
+        margin-top: -4em;
+    }
   
 }
 @media only screen and (max-width: 875px) {
@@ -859,11 +861,20 @@ ul.road-map-list{
     }
     
 }
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 725px){
     .card-container-mission {
         display: block;
         margin-left:5vw;
     }
+}
+@media only screen and (max-width: 950px){
+    .card-container-mission {
+        display: block;
+        margin-left:0vw;
+    }
+}
+@media only screen and (min-width: 750px) and (max-width: 950px) {
+    
 }
 @media only screen and (min-width: 750px){
     .social-cards {
@@ -924,7 +935,7 @@ ul.road-map-list{
         margin-left: 15px;
     }
     .header {
-        max-width: 80vw;
+        max-width: 90vw;
         text-align: center;
         margin: auto;
     }
@@ -934,10 +945,7 @@ ul.road-map-list{
         padding: 0;
         margin: 0;
     }
-    .company-name-nav-bar {
-        margin-left:0;
-        
-    }
+    
     .our-mission {
         max-width: 80vw;
         margin: auto;
@@ -951,11 +959,17 @@ ul.road-map-list{
         margin: auto;
 
     }
+
 }
+
 
 @media only screen and (min-width: 1000px){
     .hero {
-        grid-template-columns: 1fr .45fr;
+        grid-template-columns: 1fr .4fr;
+    }
+    .header {
+        max-width: 80vw;
+
     }
     .main-hero-text {
         max-width: 800px;
@@ -979,6 +993,9 @@ ul.road-map-list{
     .left-nav {
         display: block;
     }
+    .card-container-mission {
+        margin-left:-25px;
+    }
     .card {
         max-width: 300px;
     }
@@ -991,7 +1008,7 @@ ul.road-map-list{
         text-align: center;
     }
     .company-name-nav-bar {
-        margin-left:0;
+        margin-left: 0px;
     }
 
 }
