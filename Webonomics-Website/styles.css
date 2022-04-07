@@ -277,7 +277,7 @@ a {
     padding: 1em;
     margin-bottom: 2em;
     margin-right: 10%;
-    margin-left: 1em;
+    
     margin-top: 1em;
     color: white;
     height: 350px;
@@ -823,7 +823,7 @@ ul.road-map-list{
 }
 @media only screen and (max-width: 1375px) and (min-width:  725px) {
     .mission-card {
-        height: 500px;
+        height: 600px;
     }
 }
 @media only screen and (max-width: 875px) {
@@ -868,7 +868,7 @@ ul.road-map-list{
 @media only screen and (max-width: 725px){
     .card-container-mission {
         display: block;
-        
+        margin-left: 5%;
     }
 }
 
