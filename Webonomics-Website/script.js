@@ -64,7 +64,6 @@ hamburgerButton.addEventListener("click", e => {
 });
 
 window.addEventListener("resize", () => {
-    console.log(window.innerWidth);
     if(window.innerWidth > 820){
         navBarLinks.style.display = "flex";
         navMenuHamburger.style.backgroundColor = "transparent";
@@ -80,7 +79,6 @@ window.addEventListener("resize", () => {
 const observer3 = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            console.log(entry.target)
             entry.target.classList.toggle('load-line');
             observer.unobserve(entry.target);
         }
@@ -93,7 +91,6 @@ const observer3 = new IntersectionObserver(function(entries, observer) {
 const observer2 = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            console.log(entry.target)
             entry.target.classList.toggle('moveUp2');
             observer.unobserve(entry.target);
         }
@@ -106,7 +103,6 @@ const observer2 = new IntersectionObserver(function(entries, observer) {
 const observer = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            console.log(entry.target)
             entry.target.classList.toggle('moveUp');
             observer.unobserve(entry.target);
         }
@@ -119,7 +115,6 @@ const observer = new IntersectionObserver(function(entries, observer) {
 const observer4 = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            console.log(entry.target)
             entry.target.classList.toggle('moveUp4');
             observer.unobserve(entry.target);
         }
@@ -132,7 +127,6 @@ const observer4 = new IntersectionObserver(function(entries, observer) {
 const observer5 = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            console.log(entry.target)
             entry.target.classList.toggle('moveUp3');
             observer.unobserve(entry.target);
         }
@@ -145,7 +139,6 @@ const observer5 = new IntersectionObserver(function(entries, observer) {
 const observer6 = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            console.log(entry.target)
             entry.target.classList.toggle('moveUp');
             observer.unobserve(entry.target);
         }
