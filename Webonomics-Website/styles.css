@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+   
+
 }
 body{
     background-color: #19181A;
@@ -29,6 +31,7 @@ a {
     align-items: center;
     height: 80px;
     z-index: 1;
+    overflow-y: hidden;
 }
 .nav-bar a {
     color: white;
@@ -84,7 +87,7 @@ a {
     opacity: .7;
 }
 .right-col-hero-section {
-    
+    overflow-x: none;
 }
 .button-container {
     display: flex;
@@ -110,6 +113,7 @@ a {
     padding-top: 1.55em;
     text-align: center;
     margin-right: 1.5em;
+
 }
 .discord-button {
     margin-top: 3em;
@@ -263,6 +267,7 @@ a {
     font-size: 3em;
     font-weight: 600;
     font-family: 'Inconsolata', monospace;
+    z-index: -1;
 }
 
 .card-container-mission {
@@ -745,6 +750,15 @@ ul.road-map-list{
     background-color: #a24cf8;
 }
 
+@media only screen and (max-width: 500px) {
+    .req {
+        transform: translateY(-30px);
+    }
+    .mission-card3 {
+        height: 410px;
+    }
+}
+
 @media only screen and (max-width: 820px) {
     .nav-bar ul {
         display: none;
@@ -870,6 +884,7 @@ ul.road-map-list{
         display: block;
         margin-left: 5%;
     }
+
 }
 
 @media only screen and (min-width: 800px) {
@@ -877,6 +892,13 @@ ul.road-map-list{
         max-width: 85vw;
         margin: auto;
     }
+
+}
+@media only screen and (max-width: 800px) {
+    .spinning-circle-gif {
+        display: none;
+    }
+
 }
 @media only screen and (min-width: 750px){
     .social-cards {
