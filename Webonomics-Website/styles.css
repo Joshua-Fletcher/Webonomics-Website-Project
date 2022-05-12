@@ -584,7 +584,7 @@ ul.road-map-list{
         height: 0px;
     }
     to{
-        height: 290px;
+        height: 295px;
     }
 }
 
@@ -730,6 +730,7 @@ ul.road-map-list{
     padding-bottom: 4em;
     justify-content: center;
     align-items: center;
+
 }
 .contract-text{
     padding-right: 1em;
@@ -763,8 +764,9 @@ ul.road-map-list{
 
 @media only screen and (max-width: 499px) {
     .airdrop-info-container {
-        padding-bottom: 1.5em;
+        padding-bottom: 1.6em;
     }
+
 }
 @media only screen and (max-width: 820px) {
     .nav-bar ul {

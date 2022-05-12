@@ -74,6 +74,25 @@ window.addEventListener("resize", () => {
         navMenuHamburger.style.backgroundColor = "transparent";
         navMenuHamburger.style.paddingRight = "0em";
     }
+    if(window.innerWidth <= 499){
+        document.querySelector(".contract-button").innerText = "Visit Contract Address";
+        document.querySelector(".contract-button").style.paddingRight = "3em";
+        document.querySelector(".contract-button").style.paddingLeft = "3em";
+        document.querySelector(".contract-button").style.fontSize = "1em";
+    }
+    else if(window.innerWidth > 499){
+        document.querySelector(".contract-button").innerText = "0x7cd946ce688069fdd8ca133d8b8b2ec263b943f4";
+        document.querySelector(".contract-button").style.fontSize = ".9em";
+    }
+});
+
+window.addEventListener("load", () => {
+    if(window.innerWidth <= 499){
+        document.querySelector(".contract-button").innerText = "Visit Contract Address";
+        document.querySelector(".contract-button").style.paddingRight = "3em";
+        document.querySelector(".contract-button").style.paddingLeft = "3em";
+        document.querySelector(".contract-button").style.fontSize = "1em";
+    }
 });
 
 const observer3 = new IntersectionObserver(function(entries, observer) {
