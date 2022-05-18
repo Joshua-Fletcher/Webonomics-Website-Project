@@ -760,6 +760,22 @@ ul.road-map-list{
 .contract-button:hover {
     background-color: #a24cf8;
 }
+.copy-button {
+    background-color: #a24cf8;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+    font-size: 13px;
+    position: absolute;
+    transform: translate(-100px,-48px);
+}
 
 @media only screen and (max-width: 500px) {
     .req {

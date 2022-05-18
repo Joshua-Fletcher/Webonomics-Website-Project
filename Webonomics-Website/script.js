@@ -48,6 +48,20 @@ const body = document.body;
 let hamburgerButtonClicked = false;
 let darkmode = true;
 
+/*function copyToClipboard() {
+    var content = document.querySelector(".contract-button");
+    content.select();
+    document.execCommand("copy");
+    alert("Copied!")
+}
+
+document.querySelector(".copy-button").addEventListener("click", () => {
+    var content = document.querySelector(".contract-button").value;
+    content.select();
+    document.exec("copy");
+    alert("Copied!")
+});*/
+
 hamburgerButton.addEventListener("click", e => {
     if(hamburgerButtonClicked == false) {
         hamburgerButtonClicked = true;
