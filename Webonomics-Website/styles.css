@@ -600,7 +600,7 @@ ul.road-map-list{
 .airdrop-info-container {
     max-width: 60vw;
     margin: auto;
-    height: 350px;
+
     border-radius: 1.2em;
     background-color: #1e1d1f;
     box-shadow: 8px 5px 10px black;
@@ -608,11 +608,51 @@ ul.road-map-list{
     justify-content: center;
     align-items: center;
 }
+
+.rollout-info {
+    max-width: 80vw;
+    margin: auto;
+}
 .airdrop-text {
     padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
+
+.events-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 95%;
+    margin: auto;
+    margin-top: 3em;
+}
+
+.events-item {
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+.event-card {
+    color: white;
+    background-color: #333333;
+    border-radius: 1em;
+    padding: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    max-width: 30%;;
+    margin: 1em;
+    border: 1.5px solid black;
+    opacity: .9;
+    box-shadow: 8px 5px 10px black;
+}
+
+.event-desc {
+
+}
+
 .follow-twitter-section {
     padding-left: 4em;
     padding-top: 4em;
@@ -1024,6 +1064,24 @@ ul.road-map-list{
     }
 
 }
+
+@media only screen and (max-width: 850px){
+    .events-list {
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .airdrop-info-container {
+        max-width: 80vw;
+        margin: auto;
+    }
+    
+    .event-card {
+        margin: auto;
+        max-width: 80%;;
+        margin-top: 1em;
+    }
+}
 @media only screen and (min-width: 920px){
     .airdrop-text {
         font-size: 1.25em;
@@ -1112,6 +1170,15 @@ ul.road-map-list{
         padding-top: 2.5em;
         padding-right: 1.7em;
         padding-left: 1.7em;
+    }
+    .airdrop-info-container {
+        max-width: 80vw;
+        margin-bottom: 4em;
+    }
+    .event-card {
+        font-size: 1.25em;
+        max-width: 35%;
+        margin: 1em;
     }
 }
 @media only screen and (min-width: 1400px){
