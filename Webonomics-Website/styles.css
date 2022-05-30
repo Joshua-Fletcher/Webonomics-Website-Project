@@ -653,6 +653,11 @@ ul.road-map-list{
 
 }
 
+.get-involved-title {
+    text-decoration: none;
+    color: white;
+}
+
 .follow-twitter-section {
     padding-left: 4em;
     padding-top: 4em;
@@ -834,9 +839,7 @@ ul.road-map-list{
 
 }
 @media only screen and (max-width: 400px) {
-    .airdrop-info-container {
-        height: 415px;
-    }
+
 }
 @media only screen and (max-width: 820px) {
     .nav-bar ul {
